@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <script defer src="script.js"></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="ip-container">
+      <h1>IP Address Tracker</h1>
+
+      <div class="search">
+        <div class="search-item">
+          <input
+            type="text"
+            id="input-search"
+            class="input-search"
+            placeholder="Search for any IP address or domain"
+          />
+          <div class="button-search" id="button-search">
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="14"
+            >
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="information">
+      <div class="info">
+        <small>IP ADDRESS</small>
+        <h2 id="ip"></h2>
+      </div>
+      <div class="info">
+        <small>LOCATION</small>
+        <h2 id="location"></h2>
+      </div>
+      <div class="info">
+        <small>TIMEZONE</small>
+        <h2 id="timezone"></h2>
+      </div>
+      <div class="info">
+        <small>ISP</small>
+        <h2 id="isp"></h2>
+      </div>
+    </div>
+    <!-- IP Address Tracker
+      
+  Search for any IP address or domain
+  
+  IP Address
+  Location
+  Timezone
+  UTC  add offset value dynamically using the API 
+  ISP -->
+  </body>
+</html>
